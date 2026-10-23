@@ -1,0 +1,3 @@
+No account or sign-in is needed.
+
+To try it: tap "Scan menu", take a photo of a Spanish, French or Italian menu (or pick one from the photo library), and move the frame over a dish to see its English translation and its price in US dollars. Translation runs on the device with Apple's Translation framework; the first time, the app asks to download the menu language. "Add to order" collects dishes; "Save" on the Order screen stores the order on the device.

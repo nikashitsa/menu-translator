@@ -1,0 +1,1 @@
+Point your camera at a Spanish menu and see each dish in English, with the price in US dollars. Works offline once your language is downloaded.

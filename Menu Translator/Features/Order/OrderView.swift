@@ -157,6 +157,7 @@ private struct DishRow: View {
                 .contentShape(.rect)
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("dishRow")
 
             HStack(spacing: 12) {
                 Button {

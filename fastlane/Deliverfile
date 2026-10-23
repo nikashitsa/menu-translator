@@ -1,0 +1,12 @@
+# App Store Connect upload of the text in metadata/ and the framed screenshots in screenshots/:
+# `fastlane upload_metadata`. Only edits the version being prepared; nothing is submitted for review.
+
+api_key_path("./fastlane/app_store_connect_api_key.json")
+app_identifier("com.nikashitsa.Menu-Translator")
+
+skip_binary_upload(true)
+# Framed screenshots replace the unframed ones automatically; old ones on App Store Connect are removed.
+overwrite_screenshots(true)
+submit_for_review(false)
+automatic_release(false)
+run_precheck_before_submit(false)

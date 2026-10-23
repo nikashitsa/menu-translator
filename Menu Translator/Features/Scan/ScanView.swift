@@ -33,13 +33,18 @@ struct ScanView: View {
             }
             .buttonStyle(ShutterButtonStyle())
             .disabled(isCapturing)
+            .accessibilityLabel("Take photo")
             footer
         }
         .background {
             ZStack {
-                CameraPreview(session: camera.session, isFrozen: isPreviewFrozen) { isPreviewing = $0 }
-                    .ignoresSafeArea()
-                if let frozenFrame, !isPreviewing {
+                if ScreenshotMode.isEnabled, let menuPhoto = ScreenshotMode.menuPhoto {
+                    FullScreenPhoto(image: menuPhoto)
+                } else {
+                    CameraPreview(session: camera.session, isFrozen: isPreviewFrozen) { isPreviewing = $0 }
+                        .ignoresSafeArea()
+                }
+                if let frozenFrame, !isPreviewing, !ScreenshotMode.isEnabled {
                     FullScreenPhoto(image: frozenFrame)
                 }
                 HelperGrid()
@@ -54,7 +59,7 @@ struct ScanView: View {
         }
         .task {
             isPreviewFrozen = false
-            guard await AVCaptureDevice.requestAccess(for: .video) else { return }
+            guard !ScreenshotMode.isEnabled, await AVCaptureDevice.requestAccess(for: .video) else { return }
             camera.start()
         }
         .onChange(of: pickedPhoto) { _, item in
@@ -69,6 +74,10 @@ struct ScanView: View {
     }
 
     private func takePhoto() async {
+        if ScreenshotMode.isEnabled {
+            router.push(.translation(ScreenshotMode.menuPhoto), animated: false)
+            return
+        }
         isCapturing = true
         defer { isCapturing = false }
         // Freeze on the tapped frame right away; processing the photo takes a moment.
@@ -135,6 +144,7 @@ struct ScanView: View {
                     .setFontStyle(Fonts.textXsBold)
             }
             .buttonStyle(SmallButton())
+            .accessibilityIdentifier("orderButton")
         }
         .padding(16)
         .background(Colors.black, ignoresSafeAreaEdges: [.bottom, .horizontal])

@@ -133,6 +133,11 @@ struct TranslationView: View {
         .priceEditor(isPresented: $isEditingPrice, currencyCode: currencyCode) { price in
             menuItem?.price = price
         }
+        .onChange(of: [photoFrame, selectionArea], initial: true) {
+            if ScreenshotMode.isEnabled {
+                showFeaturedDish()
+            }
+        }
         // Re-read whenever what's inside the frame may have changed, once it has settled.
         .task(id: readingKey) {
             isReading = true
@@ -168,6 +173,7 @@ struct TranslationView: View {
                     languageLabel.setFontStyle(Fonts.textXsBold)
                 }
                 .buttonStyle(SmallButton(variant: .dark))
+                .accessibilityIdentifier("languageButton")
                 .overlay {
                     if isLanguageMissing {
                         Capsule().strokeBorder(Colors.danger, lineWidth: 1)
@@ -201,6 +207,7 @@ struct TranslationView: View {
                 scale > 1 ? .easeOut(duration: 0.08) : .spring(duration: 0.15, bounce: 0.3)
             }
             .onGeometryChange(for: CGRect.self) { $0.frame(in: .global) } action: { orderButtonFrame = $0 }
+            .accessibilityIdentifier("orderButton")
         }
         .padding(16)
         .background(Colors.black, ignoresSafeAreaEdges: [.bottom, .horizontal])
@@ -346,6 +353,29 @@ struct TranslationView: View {
     private func startEditingPrice() {
         guard hasText, !isReading else { return }
         isEditingPrice = true
+    }
+
+    /// Screenshots: zooms the photo so the demo dish fills the width and puts the frame around it.
+    private func showFeaturedDish() {
+        guard let photo, photo.size.width > 0, !photoFrame.isEmpty, !selectionArea.isEmpty else { return }
+        let dish = ScreenshotMode.featuredDish
+        let fill = max(photoFrame.width / photo.size.width, photoFrame.height / photo.size.height)
+        let scale = min((selectionArea.width - 48) / (dish.width * photo.size.width * fill), 2.5)
+        // Where the dish's center would be with this zoom and no offset, then moved to the area's center.
+        let pointsPerUnit = CGSize(width: photo.size.width * fill * scale, height: photo.size.height * fill * scale)
+        let dishCenter = CGPoint(
+            x: photoFrame.midX + (dish.midX - 0.5) * pointsPerUnit.width,
+            y: photoFrame.midY + (dish.midY - 0.5) * pointsPerUnit.height
+        )
+        let offset = CGSize(width: selectionArea.midX - dishCenter.x, height: selectionArea.midY - dishCenter.y)
+        photoTransform = PhotoTransform(scale: scale, offset: offset)
+        let size = CGSize(width: dish.width * pointsPerUnit.width + 16, height: dish.height * pointsPerUnit.height + 4)
+        selection = CGRect(
+            x: (selectionArea.width - size.width) / 2,
+            y: (selectionArea.height - size.height) / 2,
+            width: size.width,
+            height: size.height
+        )
     }
 
     private func defaultSelection(in size: CGSize) -> CGRect {

@@ -76,6 +76,9 @@ enum MenuReader {
 
     /// Translates with Apple Translation; `nil` if the languages aren't installed or it fails.
     static func translate(_ text: String, from source: Locale.Language, to target: Locale.Language) async -> String? {
+        if ScreenshotMode.isEnabled {
+            return ScreenshotMode.translation(of: text) ?? text
+        }
         // Translated as one comma-separated line: reads better than line by line (which also
         // produced empty lines), and the commas carry over into the translation.
         let sentence = text.split(whereSeparator: \.isNewline).joined(separator: ", ")

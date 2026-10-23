@@ -33,6 +33,8 @@ final class LanguageDownloads {
     private let logger = Logger(subsystem: "com.nikashitsa.Menu-Translator", category: "LanguageDownloads")
 
     func state(of language: MenuLanguage) -> State {
+        // The Simulator can't download languages.
+        if ScreenshotMode.isEnabled { return .downloaded }
         guard language != target else { return targetState }
         return states[language.id] ?? .notDownloaded
     }
@@ -58,6 +60,7 @@ final class LanguageDownloads {
     /// translations fail as "not installed" for a second or two meanwhile. So languages installed
     /// before are re-checked a few times before they're shown as missing.
     func refresh() async {
+        guard !ScreenshotMode.isEnabled else { return }
         for attempt in 1...4 {
             for language in MenuLanguage.menuLanguages {
                 let state = await installedState(of: language)

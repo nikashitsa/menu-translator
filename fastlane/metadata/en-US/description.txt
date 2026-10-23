@@ -1,0 +1,28 @@
+Eating out in Mexico or Spain? Point your camera at the menu, frame a dish, and read it in English with its price in US dollars.
+
+Menu Translator to English is made for American travelers. It translates restaurant and café menus from Spanish into English, converts prices from Mexican pesos (MXN) and other local currencies into USD, and keeps a running total of what you order. French and Italian menus are supported too.
+
+SPANISH MENUS IN ENGLISH
+• Take a photo of the menu or pick one from your library
+• Move the frame over a dish to see its English translation
+• Reads the dish name, its description, and its price
+
+PRICES IN US DOLLARS
+• See every price in USD next to the menu price, like "$7.85 (145 MXN)"
+• Mexican pesos, euros, and the other currencies of Spanish-, French-, and Italian-speaking countries
+• Fix a price by hand if the menu is hard to read
+
+WORKS OFFLINE
+• Translation and text reading happen on your iPhone
+• Download a language once, then translate menus without a connection
+• Exchange rates update when you're online; the last saved rates are used offline
+
+YOUR ORDERS, SAVED
+• Add dishes to an order and see the total in dollars as you go
+• Save orders with the restaurant name and look back at them anytime
+• Orders stay on your phone
+
+LANGUAGES
+Spanish, French, and Italian to English.
+
+Translations come from Apple's on-device translation and may not be perfect for every regional dish. Exchange rates are for reference; the amount you pay may differ.

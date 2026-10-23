@@ -32,6 +32,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+fastlane/screenshots/screenshots.html
+app_store_connect_api_key.json
 
 # Editors
 .vscode/

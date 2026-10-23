@@ -22,6 +22,13 @@ final class ExchangeRates {
     private static var bundledURL: URL? { Bundle.main.url(forResource: "exchange-rates", withExtension: "json") }
 
     func load() async {
+        // Screenshots: the bundled rates only, so prices match the sample orders.
+        if ScreenshotMode.isEnabled {
+            if let bundled = Self.bundledURL.flatMap({ try? Data(contentsOf: $0) }) {
+                apply(bundled)
+            }
+            return
+        }
         if rates.isEmpty {
             let saved = (try? Data(contentsOf: Self.cacheURL)) ?? Self.bundledURL.flatMap { try? Data(contentsOf: $0) }
             if let saved {

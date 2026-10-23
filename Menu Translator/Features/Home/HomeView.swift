@@ -36,6 +36,7 @@ struct HomeView: View {
                         OrderRow(order: order)
                     }
                     .buttonStyle(.plain)
+                    .accessibilityIdentifier("recentOrder")
                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                         Button(role: .destructive) {
                             withAnimation {

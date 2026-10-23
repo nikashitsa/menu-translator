@@ -1,0 +1,30 @@
+{
+  "device_frame_version": "latest",
+  "default": {
+    "keyword": {
+      "font": "./fonts/SF-Pro-Display-Bold.otf",
+      "color": "#FFFFFF"
+    },
+    "title": {
+      "font": "./fonts/SF-Pro-Display-Medium.otf",
+      "color": "#E9DDFF"
+    },
+    "background": "./background.jpg",
+    "padding": 60,
+    "title_min_height": "12%",
+    "stack_title": true,
+    "title_below_image": false,
+    "show_complete_frame": true
+  },
+  "data": [
+    {
+      "filter": "iPad Pro 13-inch",
+      "force_device_type": "iPad Pro (12.9-inch) (4th generation)",
+      "font_scale_factor": 0.08
+    },
+    {
+      "filter": "iPhone 17 Pro Max",
+      "force_device_type": "iPhone 17 Pro Max"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# App Store screenshots: `fastlane screenshots` (or `fastlane snapshot`).
+# The tests are in "Menu TranslatorUITests/ScreenshotTests.swift".
+
+project("Menu Translator.xcodeproj")
+scheme("Screenshots")
+
+# The sizes App Store Connect requires: 6.9" iPhone and 13" iPad.
+devices([
+  "iPhone 17 Pro Max",
+  "iPad Pro 13-inch (M5)"
+])
+
+languages(["en-US"])
+
+output_directory("./fastlane/screenshots")
+clear_previous_screenshots(true)
+# 9:41, full battery and signal.
+override_status_bar(true)
+concurrent_simulators(true)
+stop_after_first_error(true)

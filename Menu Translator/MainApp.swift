@@ -12,9 +12,14 @@ import SwiftUI
 struct MainApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            if let container = ScreenshotMode.container {
+                RootView()
+                    .modelContainer(container)
+            } else {
+                RootView()
+                    // No autosave: orders are written only when "Save" is tapped on the Order screen.
+                    .modelContainer(for: Order.self, isAutosaveEnabled: false)
+            }
         }
-        // No autosave: orders are written only when "Save" is tapped on the Order screen.
-        .modelContainer(for: Order.self, isAutosaveEnabled: false)
     }
 }

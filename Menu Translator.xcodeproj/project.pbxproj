@@ -20,11 +20,19 @@
 			remoteGlobalIDString = 8386AFA83077C1F20089F547;
 			remoteInfo = "Menu Translator";
 		};
+		83C7E506309A00000000C3D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8386AFA13077C1F20089F547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8386AFA83077C1F20089F547;
+			remoteInfo = "Menu Translator";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8386AFA93077C1F20089F547 /* Menu Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C7E501309A00000000A1B2 /* Menu TranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu TranslatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C7E501309A00000000C3D4 /* Menu TranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu TranslatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F4EA27308B7A3A0024A83A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		83F4EA28308B7A3A0024A83A /* privacy-policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "privacy-policy.md"; sourceTree = "<group>"; };
 		83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "terms-and-conditions.md"; sourceTree = "<group>"; };
@@ -36,9 +44,19 @@
 			path = "Menu Translator";
 			sourceTree = "<group>";
 		};
+		83C7E501309A00000000E5F6 /* fastlane */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = fastlane;
+			sourceTree = "<group>";
+		};
 		83C7E502309A00000000A1B2 /* Menu TranslatorTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Menu TranslatorTests";
+			sourceTree = "<group>";
+		};
+		83C7E502309A00000000C3D4 /* Menu TranslatorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Menu TranslatorUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -58,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C7E504309A00000000C3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +94,8 @@
 				83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */,
 				8386AFAB3077C1F20089F547 /* Menu Translator */,
 				83C7E502309A00000000A1B2 /* Menu TranslatorTests */,
+				83C7E502309A00000000C3D4 /* Menu TranslatorUITests */,
+				83C7E501309A00000000E5F6 /* fastlane */,
 				8386AFAA3077C1F20089F547 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +105,7 @@
 			children = (
 				8386AFA93077C1F20089F547 /* Menu Translator.app */,
 				83C7E501309A00000000A1B2 /* Menu TranslatorTests.xctest */,
+				83C7E501309A00000000C3D4 /* Menu TranslatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +158,29 @@
 			productReference = 83C7E501309A00000000A1B2 /* Menu TranslatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83C7E508309A00000000C3D4 /* Menu TranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C7E50B309A00000000C3D4 /* Build configuration list for PBXNativeTarget "Menu TranslatorUITests" */;
+			buildPhases = (
+				83C7E503309A00000000C3D4 /* Sources */,
+				83C7E504309A00000000C3D4 /* Frameworks */,
+				83C7E505309A00000000C3D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83C7E507309A00000000C3D4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				83C7E502309A00000000C3D4 /* Menu TranslatorUITests */,
+			);
+			name = "Menu TranslatorUITests";
+			packageProductDependencies = (
+			);
+			productName = "Menu TranslatorUITests";
+			productReference = 83C7E501309A00000000C3D4 /* Menu TranslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +195,10 @@
 						CreatedOnToolsVersion = 26.5;
 					};
 					83C7E508309A00000000A1B2 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 8386AFA83077C1F20089F547;
+					};
+					83C7E508309A00000000C3D4 = {
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 8386AFA83077C1F20089F547;
 					};
@@ -165,6 +220,7 @@
 			targets = (
 				8386AFA83077C1F20089F547 /* Menu Translator */,
 				83C7E508309A00000000A1B2 /* Menu TranslatorTests */,
+				83C7E508309A00000000C3D4 /* Menu TranslatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +237,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83C7E505309A00000000A1B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C7E505309A00000000C3D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,6 +267,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83C7E503309A00000000C3D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +281,11 @@
 			isa = PBXTargetDependency;
 			target = 8386AFA83077C1F20089F547 /* Menu Translator */;
 			targetProxy = 83C7E506309A00000000A1B2 /* PBXContainerItemProxy */;
+		};
+		83C7E507309A00000000C3D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8386AFA83077C1F20089F547 /* Menu Translator */;
+			targetProxy = 83C7E506309A00000000C3D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,14 +427,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikashitsa.Menu-Translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -388,14 +464,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nikashitsa.Menu-Translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -430,6 +507,26 @@
 			};
 			name = Debug;
 		};
+		83C7E509309A00000000C3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49Z845J2SJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikashitsa.Menu-TranslatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Menu Translator";
+			};
+			name = Debug;
+		};
 		83C7E50A309A00000000A1B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +546,26 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menu Translator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Menu Translator";
+			};
+			name = Release;
+		};
+		83C7E50A309A00000000C3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49Z845J2SJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nikashitsa.Menu-TranslatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Menu Translator";
 			};
 			name = Release;
 		};
@@ -478,6 +595,15 @@
 			buildConfigurations = (
 				83C7E509309A00000000A1B2 /* Debug */,
 				83C7E50A309A00000000A1B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C7E50B309A00000000C3D4 /* Build configuration list for PBXNativeTarget "Menu TranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C7E509309A00000000C3D4 /* Debug */,
+				83C7E50A309A00000000C3D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
