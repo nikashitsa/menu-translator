@@ -123,13 +123,42 @@ enum MenuReader {
             symbolRange(around: match.range, in: text, symbols: symbols, misreads: misreads)
                 .map { (number: match.range, removed: $0) }
         }
-        guard let chosen = withSymbol.last ?? matches.last.map({ (number: $0.range, removed: $0.range) }),
-              let price = parsePrice(String(text[chosen.number])) else {
-            return (cleaned(text), nil)
+        let symbolPrice = withSymbol.last.flatMap { chosen in
+            parsePrice(String(text[chosen.number])).map { (removed: chosen.removed, price: $0) }
         }
+        // "9€80" (French chalkboards): the euro sign is the decimal separator. Preferred over a
+        // symbol price before it, as the price usually ends the entry.
+        let euroDecimal = symbols.contains("€") ? lastEuroDecimalPrice(in: text) : nil
+        let chosen: (removed: Range<String.Index>, price: Decimal)?
+        if let euroDecimal, symbolPrice.map({ euroDecimal.removed.lowerBound >= $0.removed.lowerBound }) ?? true {
+            chosen = euroDecimal
+        } else if let symbolPrice {
+            chosen = symbolPrice
+        } else {
+            chosen = matches.last.flatMap { match in
+                parsePrice(String(text[match.range])).map { (removed: match.range, price: $0) }
+            }
+        }
+        guard let chosen else { return (cleaned(text), nil) }
         var remaining = text
         remaining.removeSubrange(chosen.removed)
-        return (cleaned(remaining), price)
+        return (cleaned(remaining), chosen.price)
+    }
+
+    /// The last "9€80" / "12 € 50" price: whole euros, "€", then exactly two digits of cents. Not
+    /// "12,50 € 20 cl" (the number before "€" already has decimals) nor "€ 300".
+    private static func lastEuroDecimalPrice(in text: String) -> (removed: Range<String.Index>, price: Decimal)? {
+        let pattern = /(\d{1,4})[ \u{00A0}]?€[ \u{00A0}]?(\d{2})(?!\d)/
+        return text.matches(of: pattern).reversed().lazy.compactMap { match -> (removed: Range<String.Index>, price: Decimal)? in
+            let start = match.range.lowerBound
+            if start > text.startIndex {
+                let before = text[text.index(before: start)]
+                guard !before.isNumber, before != ".", before != "," else { return nil }
+            }
+            guard let euros = Decimal(string: String(match.output.1)),
+                  let cents = Decimal(string: String(match.output.2)) else { return nil }
+            return (match.range, euros + cents / 100)
+        }.first
     }
 
     /// Symbols written before the price ("$80", "S/ 25"); the rest usually follow it ("12 €",

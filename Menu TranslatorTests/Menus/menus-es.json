@@ -1,0 +1,653 @@
+[
+  {
+    "file": "es-01.jpg",
+    "language": "es",
+    "currency": "PEN",
+    "source": "https://commons.wikimedia.org/wiki/File:Carta_cevicheria_chiclayo.jpg",
+    "license": "CC BY 2.0",
+    "dishes": [
+      {
+        "name": "Cebiche de conchas negras",
+        "price": 20,
+        "english": [
+          "ceviche",
+          "clam",
+          "cockle",
+          "shell"
+        ],
+        "rect": [
+          0,
+          0.3725,
+          0.5589,
+          0.0467
+        ]
+      },
+      {
+        "name": "Cebiche de tollo",
+        "price": 20,
+        "english": [
+          "ceviche",
+          "shark",
+          "tollo"
+        ],
+        "rect": [
+          0,
+          0.4196,
+          0.5211,
+          0.0442
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-02.jpg",
+    "language": "es",
+    "currency": "MXN",
+    "source": "https://commons.wikimedia.org/wiki/File:Puerto_Vallarta,_Mexico_(February_2024)_-_105.jpg",
+    "license": "CC BY-SA 4.0",
+    "dishes": [
+      {
+        "name": "Ensalada César",
+        "price": 140,
+        "english": [
+          "caesar",
+          "salad"
+        ],
+        "rect": [
+          0.0739,
+          0.8262,
+          0.1828,
+          0.0267
+        ]
+      },
+      {
+        "name": "Flan de vainilla",
+        "price": 150,
+        "english": [
+          "flan",
+          "vanilla",
+          "custard"
+        ],
+        "rect": [
+          0.5192,
+          0.7123,
+          0.1644,
+          0.0233
+        ]
+      },
+      {
+        "name": "Tazón de sopa de langosta",
+        "price": 165,
+        "english": [
+          "lobster"
+        ],
+        "rect": [
+          0.0918,
+          0.7248,
+          0.2552,
+          0.031
+        ]
+      },
+      {
+        "name": "Tazón de sopa de frijoles negros",
+        "price": 165,
+        "english": [
+          "bean"
+        ],
+        "rect": [
+          0.1017,
+          0.6804,
+          0.2911,
+          0.0267
+        ]
+      },
+      {
+        "name": "Brownie a la moda",
+        "price": 150,
+        "english": [
+          "brownie"
+        ],
+        "rect": [
+          0.5192,
+          0.7435,
+          0.1922,
+          0.0233
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-03.jpg",
+    "language": "es",
+    "currency": "MXN",
+    "source": "https://commons.wikimedia.org/wiki/File:Tacos_jacky.jpg",
+    "license": "CC BY-SA 4.0",
+    "dishes": [
+      {
+        "name": "Tacos de chorizo",
+        "price": 5,
+        "english": [
+          "taco",
+          "chorizo"
+        ],
+        "rect": [
+          0.0196,
+          0.4987,
+          0.34,
+          0.0421
+        ]
+      },
+      {
+        "name": "Tacos de barbacoa",
+        "price": 5,
+        "english": [
+          "taco",
+          "barbecue",
+          "barbacoa"
+        ],
+        "rect": [
+          0.0196,
+          0.5654,
+          0.34,
+          0.0421
+        ]
+      },
+      {
+        "name": "Gorditas de lengua",
+        "price": 8,
+        "english": [
+          "tongue"
+        ],
+        "rect": [
+          0.6502,
+          0.2815,
+          0.3475,
+          0.0475
+        ]
+      },
+      {
+        "name": "Gorditas de chicharrón",
+        "price": 8,
+        "english": [
+          "pork rind",
+          "crackling",
+          "chicharr",
+          "rind"
+        ],
+        "rect": [
+          0.6029,
+          0.3175,
+          0.3921,
+          0.0442
+        ]
+      },
+      {
+        "name": "Malteadas",
+        "price": 23,
+        "english": [
+          "milkshake",
+          "shake",
+          "malt"
+        ],
+        "rect": [
+          0.4531,
+          0.576,
+          0.2542,
+          0.05
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-04.jpg",
+    "language": "es",
+    "currency": "MXN",
+    "source": "https://commons.wikimedia.org/wiki/File:Taquer%C3%ADa_Los_Cocuyos_2.jpg",
+    "license": "CC BY 2.0",
+    "dishes": [
+      {
+        "name": "Tacos de surtida",
+        "price": 11,
+        "english": [
+          "assorted",
+          "mixed",
+          "taco"
+        ],
+        "rect": [
+          0.1265,
+          0.3762,
+          0.2312,
+          0.0406
+        ]
+      },
+      {
+        "name": "Tacos de cabeza",
+        "price": 16,
+        "english": [
+          "head"
+        ],
+        "rect": [
+          0.1265,
+          0.4357,
+          0.2311,
+          0.0414
+        ]
+      },
+      {
+        "name": "Tacos de tripa",
+        "price": 16,
+        "english": [
+          "tripe",
+          "gut",
+          "intestine"
+        ],
+        "rect": [
+          0.1263,
+          0.6444,
+          0.2286,
+          0.0403
+        ]
+      },
+      {
+        "name": "Tacos de tronco de oreja",
+        "price": 16,
+        "english": [
+          "ear"
+        ],
+        "rect": [
+          0.1217,
+          0.545,
+          0.24,
+          0.06
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-05.jpg",
+    "language": "es",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:752_Speisekarte_eines_Restaurants_in_Cala_Millor.jpg",
+    "license": "CC0",
+    "dishes": [
+      {
+        "name": "Pizza jamón",
+        "price": 6.3,
+        "english": [
+          "ham"
+        ],
+        "rect": [
+          0.0317,
+          0.2855,
+          0.264,
+          0.0519
+        ]
+      },
+      {
+        "name": "Pizza 4 quesos",
+        "price": 6.7,
+        "english": [
+          "cheese"
+        ],
+        "rect": [
+          0.0332,
+          0.5565,
+          0.261,
+          0.0496
+        ]
+      },
+      {
+        "name": "Pizza vegetal",
+        "price": 6.5,
+        "english": [
+          "vegetable",
+          "veggie",
+          "vegetarian"
+        ],
+        "rect": [
+          0.0351,
+          0.6737,
+          0.2586,
+          0.0483
+        ]
+      },
+      {
+        "name": "Pizza napolitana",
+        "price": 6.3,
+        "english": [
+          "neapolitan",
+          "naples",
+          "napolitana"
+        ],
+        "rect": [
+          0.0347,
+          0.246,
+          0.261,
+          0.0517
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-06.jpg",
+    "language": "es",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Men%C3%BA_d%27un_restaurant_del_carrer_Corona,_Val%C3%A8ncia.jpg",
+    "license": "CC BY-SA 4.0",
+    "dishes": [
+      {
+        "name": "Gambas al ajillo con huevo",
+        "price": 8.2,
+        "english": [
+          "shrimp",
+          "prawn",
+          "garlic"
+        ],
+        "rect": [
+          0.0948,
+          0.5532,
+          0.8217,
+          0.0311
+        ]
+      },
+      {
+        "name": "Calamar de playa con romesco",
+        "price": 14,
+        "english": [
+          "squid",
+          "calamari"
+        ],
+        "rect": [
+          0.0948,
+          0.6364,
+          0.8264,
+          0.0313
+        ]
+      },
+      {
+        "name": "Solomillo de cerdo con ajos tiernos",
+        "price": 10.8,
+        "english": [
+          "pork",
+          "sirloin",
+          "tenderloin"
+        ],
+        "rect": [
+          0.0932,
+          0.7179,
+          0.8281,
+          0.0313
+        ]
+      },
+      {
+        "name": "Hamburguesa vegana con hummus",
+        "price": 9.8,
+        "english": [
+          "burger",
+          "vegan"
+        ],
+        "rect": [
+          0.0943,
+          0.7715,
+          0.8258,
+          0.0321
+        ]
+      },
+      {
+        "name": "Entrecotte de buey",
+        "price": 18,
+        "english": [
+          "entrecote",
+          "beef",
+          "ox",
+          "steak"
+        ],
+        "rect": [
+          0.0932,
+          0.8262,
+          0.8232,
+          0.0308
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-07.jpg",
+    "language": "es",
+    "currency": "BOB",
+    "source": "https://commons.wikimedia.org/wiki/File:Bolivian_cuisine_menu.jpg",
+    "license": "CC0",
+    "dishes": [
+      {
+        "name": "Milanesa de pollo",
+        "price": 10,
+        "english": [
+          "chicken"
+        ],
+        "rect": [
+          0.1658,
+          0.366,
+          0.6156,
+          0.1033
+        ]
+      },
+      {
+        "name": "Locro de pollo",
+        "price": 8,
+        "english": [
+          "chicken"
+        ],
+        "rect": [
+          0.1603,
+          0.4598,
+          0.6183,
+          0.1033
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-08.jpg",
+    "language": "es",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Museo_de_Jamon,_Madrid_-_menu_(6394608035).jpg",
+    "license": "CC BY 2.0",
+    "dishes": [
+      {
+        "name": "Lomo a la plancha, huevos fritos, patatas fritas y ensalada",
+        "price": 6.9,
+        "english": [
+          "loin",
+          "egg",
+          "grilled"
+        ],
+        "rect": [
+          0.3368,
+          0.276,
+          0.6168,
+          0.0292
+        ]
+      },
+      {
+        "name": "Filete de ternera, patatas fritas y ensalada",
+        "price": 7.9,
+        "english": [
+          "veal",
+          "steak",
+          "fillet",
+          "beef"
+        ],
+        "rect": [
+          0.6033,
+          0.4052,
+          0.3415,
+          0.0295
+        ]
+      },
+      {
+        "name": "1/2 pollo al horno, patatas fritas y ensalada",
+        "price": 6.9,
+        "english": [
+          "chicken"
+        ],
+        "rect": [
+          0.5934,
+          0.2692,
+          0.3611,
+          0.0367
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-09.jpg",
+    "language": "es",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/26528022@N07/3593632516",
+    "license": "by-nc-sa 2.0",
+    "dishes": [
+      {
+        "name": "Queso fundido natural",
+        "price": 7.5,
+        "english": [
+          "cheese"
+        ],
+        "rect": [
+          0.1583,
+          0.4269,
+          0.7751,
+          0.0439
+        ]
+      },
+      {
+        "name": "Tacos de tinga de pollo",
+        "price": 12,
+        "english": [
+          "taco",
+          "chicken"
+        ],
+        "rect": [
+          0.1519,
+          0.5265,
+          0.7878,
+          0.0408
+        ]
+      },
+      {
+        "name": "Patatas bravas y/o alioli",
+        "price": 5,
+        "english": [
+          "potato",
+          "patatas bravas",
+          "aioli"
+        ],
+        "rect": [
+          0.1456,
+          0.655,
+          0.8006,
+          0.0462
+        ]
+      },
+      {
+        "name": "Ración de morcilla de Burgos",
+        "price": 8,
+        "english": [
+          "blood sausage",
+          "black pudding",
+          "morcilla",
+          "sausage"
+        ],
+        "rect": [
+          0.145,
+          0.5853,
+          0.8009,
+          0.0512
+        ]
+      },
+      {
+        "name": "Plato de ibéricos",
+        "price": 15,
+        "english": [
+          "iberian",
+          "plate",
+          "platter"
+        ],
+        "rect": [
+          0.1458,
+          0.6867,
+          0.7994,
+          0.0495
+        ]
+      }
+    ]
+  },
+  {
+    "file": "es-10.jpg",
+    "language": "es",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/22662305@N04/2887904137",
+    "license": "by 2.0",
+    "dishes": [
+      {
+        "name": "Tortilla española",
+        "price": 2,
+        "english": [
+          "omelet",
+          "tortilla",
+          "spanish"
+        ],
+        "rect": [
+          0.0271,
+          0.4063,
+          0.5678,
+          0.1378
+        ]
+      },
+      {
+        "name": "Boquerones con tomate",
+        "price": 2,
+        "english": [
+          "anchov",
+          "tomato"
+        ],
+        "rect": [
+          0.005,
+          0.5338,
+          0.5723,
+          0.1117
+        ]
+      },
+      {
+        "name": "Bacon con queso",
+        "price": 2,
+        "english": [
+          "bacon",
+          "cheese"
+        ],
+        "rect": [
+          0.0091,
+          0.5605,
+          0.5628,
+          0.0876
+        ]
+      },
+      {
+        "name": "Chicharrones fritos",
+        "price": 2,
+        "english": [
+          "pork rind",
+          "crackling",
+          "chicharr",
+          "rind",
+          "fried"
+        ],
+        "rect": [
+          0,
+          0.7238,
+          0.5645,
+          0.0847
+        ]
+      }
+    ]
+  }
+]

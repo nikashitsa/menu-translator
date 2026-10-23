@@ -1,0 +1,678 @@
+[
+  {
+    "file": "it-01.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:2016-07-05_osteria_la_Chitarra,_Napoli.jpg",
+    "license": "CC BY-SA 3.0",
+    "dishes": [
+      {
+        "name": "Zuppa di fagioli alla maruzzara",
+        "price": 7,
+        "english": [
+          "bean"
+        ],
+        "rect": [
+          0.0514,
+          0.297,
+          0.4723,
+          0.0822
+        ]
+      },
+      {
+        "name": "Risotto alla napoletana",
+        "price": 7,
+        "english": [
+          "risotto",
+          "rice"
+        ],
+        "rect": [
+          0.0464,
+          0.4015,
+          0.4775,
+          0.0603
+        ]
+      },
+      {
+        "name": "Gamberoni al vino bianco",
+        "price": 12,
+        "english": [
+          "prawn",
+          "shrimp"
+        ],
+        "rect": [
+          0.0406,
+          0.4854,
+          0.4859,
+          0.0458
+        ]
+      },
+      {
+        "name": "Baccalà al limone",
+        "price": 14,
+        "english": [
+          "cod"
+        ],
+        "rect": [
+          0.035,
+          0.5883,
+          0.4894,
+          0.04
+        ]
+      },
+      {
+        "name": "Polpette alla napoletana",
+        "price": 9,
+        "english": [
+          "meatball"
+        ],
+        "rect": [
+          0.0227,
+          0.6912,
+          0.5105,
+          0.0598
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-02.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/41111966@N04/33118876131",
+    "license": "by-nc-sa 2.0",
+    "dishes": [
+      {
+        "name": "Bruschette al pomodoro",
+        "price": 5,
+        "english": [
+          "bruschett",
+          "tomato"
+        ],
+        "rect": [
+          0.1964,
+          0.2848,
+          0.6211,
+          0.07
+        ],
+        "knownIssue": "Handwritten \"5.00\" is read as \"soo\""
+      },
+      {
+        "name": "Bruschette al lardo",
+        "price": 8,
+        "english": [
+          "lard",
+          "bacon"
+        ],
+        "rect": [
+          0.1972,
+          0.3292,
+          0.5639,
+          0.0667
+        ]
+      },
+      {
+        "name": "Crostini ai fegatini",
+        "price": 8,
+        "english": [
+          "liver"
+        ],
+        "rect": [
+          0.2108,
+          0.4081,
+          0.4894,
+          0.0567
+        ],
+        "knownIssue": "Handwritten \"8.00\" loses its decimal point (800)"
+      },
+      {
+        "name": "Ravioli alla crema di tartufo",
+        "price": 13,
+        "english": [
+          "ravioli",
+          "truffle"
+        ],
+        "rect": [
+          0.2095,
+          0.5506,
+          0.578,
+          0.06
+        ],
+        "knownIssue": "Handwritten \"13.00\" loses its decimal point (1300)"
+      }
+    ]
+  },
+  {
+    "file": "it-03.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/77742578@N00/5330750197",
+    "license": "by-nc-sa 2.0",
+    "dishes": [
+      {
+        "name": "Agnolotti al plin",
+        "price": 6,
+        "english": [
+          "agnolotti",
+          "ravioli",
+          "dumpling"
+        ],
+        "rect": [
+          0.1567,
+          0.3842,
+          0.6256,
+          0.0733
+        ]
+      },
+      {
+        "name": "Bollito misto con contorno",
+        "price": 8,
+        "english": [
+          "boiled",
+          "side"
+        ],
+        "rect": [
+          0.1549,
+          0.643,
+          0.6948,
+          0.0881
+        ]
+      },
+      {
+        "name": "Bresaola, rucola, grana",
+        "price": 6,
+        "english": [
+          "bresaola",
+          "arugula",
+          "rocket"
+        ],
+        "rect": [
+          0.1594,
+          0.73,
+          0.6811,
+          0.0733
+        ]
+      },
+      {
+        "name": "Vitello tonnato, formaggio",
+        "price": 6,
+        "english": [
+          "veal",
+          "tuna"
+        ],
+        "rect": [
+          0.1507,
+          0.7599,
+          0.6934,
+          0.0946
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-04.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/11253414@N00/9064258137",
+    "license": "by-sa 2.0",
+    "dishes": [
+      {
+        "name": "Cappuccino",
+        "price": 1.2,
+        "english": [
+          "cappuccino"
+        ],
+        "rect": [
+          0.1429,
+          0.3465,
+          0.2853,
+          0.03
+        ]
+      },
+      {
+        "name": "Cioccolata calda",
+        "price": 1.3,
+        "english": [
+          "chocolate"
+        ],
+        "rect": [
+          0.1259,
+          0.4421,
+          0.2997,
+          0.0242
+        ]
+      },
+      {
+        "name": "Spremuta d'arancia",
+        "price": 2,
+        "english": [
+          "orange"
+        ],
+        "rect": [
+          0.1111,
+          0.8286,
+          0.3211,
+          0.0258
+        ]
+      },
+      {
+        "name": "Cornetti assortiti",
+        "price": 0.8,
+        "english": [
+          "croissant",
+          "assorted"
+        ],
+        "rect": [
+          0.4908,
+          0.6817,
+          0.3025,
+          0.02
+        ]
+      },
+      {
+        "name": "Panino napoletano",
+        "price": 1.3,
+        "english": [
+          "sandwich",
+          "bun",
+          "roll",
+          "neapolitan"
+        ],
+        "rect": [
+          0.4844,
+          0.7352,
+          0.3098,
+          0.0254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-05.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/59521130@N00/14811262809",
+    "license": "by 2.0",
+    "dishes": [
+      {
+        "name": "Crostini alla toscana",
+        "price": 7000,
+        "english": [
+          "tuscan"
+        ],
+        "rect": [
+          0.041,
+          0.19,
+          0.4439,
+          0.02
+        ]
+      },
+      {
+        "name": "Prosciutto toscano al coltello",
+        "price": 9000,
+        "english": [
+          "ham",
+          "prosciutto"
+        ],
+        "rect": [
+          0.0382,
+          0.2587,
+          0.4468,
+          0.02
+        ]
+      },
+      {
+        "name": "Rigatoni all'ungherese",
+        "price": 9000,
+        "english": [
+          "rigatoni",
+          "hungarian"
+        ],
+        "rect": [
+          0.0373,
+          0.4435,
+          0.4485,
+          0.0233
+        ]
+      },
+      {
+        "name": "Cinghiale alla maremmana e polenta",
+        "price": 20000,
+        "english": [
+          "boar"
+        ],
+        "rect": [
+          0.0402,
+          0.6685,
+          0.4457,
+          0.0254
+        ]
+      },
+      {
+        "name": "Pesce spada affogato al limone",
+        "price": 22000,
+        "english": [
+          "swordfish"
+        ],
+        "rect": [
+          0.5026,
+          0.356,
+          0.4457,
+          0.0233
+        ]
+      },
+      {
+        "name": "Carciofi bolliti all'agro",
+        "price": 6000,
+        "english": [
+          "artichoke"
+        ],
+        "rect": [
+          0.5026,
+          0.4352,
+          0.437,
+          0.0233
+        ],
+        "knownIssue": "Handwritten \"6000\" is read as \"0009\" on device"
+      }
+    ]
+  },
+  {
+    "file": "it-06.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/52485003@N00/552085885",
+    "license": "by-sa 2.0",
+    "dishes": [
+      {
+        "name": "Tagliere misto di salumi e pecorini toscani",
+        "price": 15,
+        "english": [
+          "cured meat",
+          "cold cut",
+          "salami",
+          "charcuterie",
+          "board",
+          "platter"
+        ],
+        "rect": [
+          0.1209,
+          0.1035,
+          0.58,
+          0.0367
+        ],
+        "knownIssue": "Chalk \"€ 15,00\" loses its decimal comma (1500)"
+      },
+      {
+        "name": "L'insalatona di Sonia con tutte le verdure, tonno e fior di latte",
+        "price": 9.5,
+        "english": [
+          "salad"
+        ],
+        "rect": [
+          0.1107,
+          0.1548,
+          0.7976,
+          0.0597
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-07.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/12111034@N03/4572632232",
+    "license": "by-sa 2.0",
+    "dishes": [
+      {
+        "name": "Birra 0.4",
+        "price": 3,
+        "english": [
+          "beer"
+        ],
+        "rect": [
+          0.3406,
+          0.3283,
+          0.2272,
+          0.0308
+        ]
+      },
+      {
+        "name": "Vino bottiglia",
+        "price": 10,
+        "english": [
+          "wine",
+          "bottle"
+        ],
+        "rect": [
+          0.2694,
+          0.3937,
+          0.3056,
+          0.0396
+        ]
+      },
+      {
+        "name": "Insalata greca",
+        "price": 7,
+        "english": [
+          "greek salad",
+          "salad"
+        ],
+        "rect": [
+          0.2457,
+          0.6481,
+          0.274,
+          0.0787
+        ]
+      },
+      {
+        "name": "Spiedini di manzo",
+        "price": 10,
+        "english": [
+          "beef",
+          "skewer"
+        ],
+        "rect": [
+          0.1954,
+          0.6747,
+          0.3344,
+          0.0912
+        ]
+      },
+      {
+        "name": "Torte - dolci",
+        "price": 2,
+        "english": [
+          "cake",
+          "dessert",
+          "sweet"
+        ],
+        "rect": [
+          0.2628,
+          0.7496,
+          0.2483,
+          0.0733
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-08.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/10559879@N00/4907260842",
+    "license": "by-sa 2.0",
+    "dishes": [
+      {
+        "name": "Melanzane",
+        "price": 21,
+        "english": [
+          "eggplant",
+          "aubergine"
+        ],
+        "rect": [
+          0.1024,
+          0.424,
+          0.3577,
+          0.0167
+        ]
+      },
+      {
+        "name": "Panna cotta",
+        "price": 11,
+        "english": [
+          "panna cotta",
+          "cream"
+        ],
+        "rect": [
+          0.5295,
+          0.5594,
+          0.3924,
+          0.0437
+        ]
+      },
+      {
+        "name": "Salami",
+        "price": 20,
+        "english": [
+          "salami"
+        ],
+        "rect": [
+          0.092,
+          0.5865,
+          0.3681,
+          0.0167
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-09.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Enal-listino_prezzi_bar_(UdI_II-2).jpg",
+    "license": "CC BY-SA 4.0",
+    "dishes": [
+      {
+        "name": "Caffè",
+        "price": 40,
+        "english": [
+          "coffee"
+        ],
+        "rect": [
+          0.0314,
+          0.329,
+          0.3867,
+          0.0504
+        ]
+      },
+      {
+        "name": "Coca Cola",
+        "price": 70,
+        "english": [
+          "coca",
+          "coke"
+        ],
+        "rect": [
+          0.4732,
+          0.3567,
+          0.4311,
+          0.0221
+        ]
+      },
+      {
+        "name": "Panini prosciutto",
+        "price": 75,
+        "english": [
+          "ham",
+          "sandwich",
+          "prosciutto"
+        ],
+        "rect": [
+          0.4579,
+          0.7102,
+          0.4444,
+          0.0233
+        ]
+      },
+      {
+        "name": "Succhi di frutta",
+        "price": 85,
+        "english": [
+          "juice"
+        ],
+        "rect": [
+          0.4608,
+          0.406,
+          0.4444,
+          0.0254
+        ]
+      }
+    ]
+  },
+  {
+    "file": "it-10.jpg",
+    "language": "it",
+    "currency": "EUR",
+    "source": "https://www.flickr.com/photos/10559879@N00/5574064388",
+    "license": "by-nc-sa 2.0",
+    "dishes": [
+      {
+        "name": "Pizza Margherita",
+        "price": 15.9,
+        "english": [
+          "pizza",
+          "margherita"
+        ],
+        "rect": [
+          0.1231,
+          0.0911,
+          0.8034,
+          0.0408
+        ]
+      },
+      {
+        "name": "Pizza Speck",
+        "price": 22.5,
+        "english": [
+          "pizza",
+          "speck"
+        ],
+        "rect": [
+          0.1323,
+          0.3679,
+          0.7944,
+          0.0267
+        ]
+      },
+      {
+        "name": "Pizza Salsiccia",
+        "price": 19.5,
+        "english": [
+          "sausage"
+        ],
+        "rect": [
+          0.1323,
+          0.4304,
+          0.7944,
+          0.0267
+        ]
+      },
+      {
+        "name": "Moscato di Pantelleria",
+        "price": 9,
+        "english": [
+          "moscato",
+          "pantelleria"
+        ],
+        "rect": [
+          0.1208,
+          0.8331,
+          0.7957,
+          0.0296
+        ]
+      }
+    ]
+  }
+]

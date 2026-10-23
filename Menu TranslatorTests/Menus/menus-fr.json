@@ -1,0 +1,779 @@
+[
+  {
+    "file": "fr-01.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_du_restaurant_Gourmet_d%27_Asie_(2).jpg",
+    "license": "Public domain",
+    "dishes": [
+      {
+        "name": "Jus d'orange",
+        "price": 2.9,
+        "english": [
+          "orange juice",
+          "juice"
+        ],
+        "rect": [
+          0.0063,
+          0.8494,
+          0.4839,
+          0.0367
+        ]
+      },
+      {
+        "name": "Bière pression",
+        "price": 3,
+        "english": [
+          "beer",
+          "draft",
+          "draught"
+        ],
+        "rect": [
+          0.0086,
+          0.6247,
+          0.4812,
+          0.0336
+        ]
+      },
+      {
+        "name": "Thé au jasmin, à la menthe, thé vert ou infusion",
+        "price": 2.2,
+        "english": [
+          "tea"
+        ],
+        "rect": [
+          0.0075,
+          0.9443,
+          0.4833,
+          0.0403
+        ]
+      },
+      {
+        "name": "Café ou décaféiné",
+        "price": 1.3,
+        "english": [
+          "coffee",
+          "decaf"
+        ],
+        "rect": [
+          0.0091,
+          0.9694,
+          0.4801,
+          0.03
+        ]
+      },
+      {
+        "name": "Sirop à l'eau",
+        "price": 1.3,
+        "english": [
+          "syrup"
+        ],
+        "rect": [
+          0.0058,
+          0.5987,
+          0.4832,
+          0.04
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-02.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_2012_de_la_cr%C3%AAperie_Bains_des_Fleurs_(3).jpg",
+    "license": "Public domain",
+    "dishes": [
+      {
+        "name": "Banane - chocolat maison",
+        "price": 7.4,
+        "english": [
+          "banana",
+          "chocolate"
+        ],
+        "rect": [
+          0.0438,
+          0.3546,
+          0.4278,
+          0.02
+        ]
+      },
+      {
+        "name": "Pêche Melba",
+        "price": 7.95,
+        "english": [
+          "peach"
+        ],
+        "rect": [
+          0.0438,
+          0.7233,
+          0.4247,
+          0.02
+        ],
+        "translationIssue": "Translated as \"melba fishing\" (pêche: peach or fishing)"
+      },
+      {
+        "name": "Poire Belle Hélène",
+        "price": 7.95,
+        "english": [
+          "pear"
+        ],
+        "rect": [
+          0.0438,
+          0.7483,
+          0.4247,
+          0.02
+        ]
+      },
+      {
+        "name": "Compote de pommes",
+        "price": 3.9,
+        "english": [
+          "apple",
+          "applesauce"
+        ],
+        "rect": [
+          0.5284,
+          0.5421,
+          0.4278,
+          0.02
+        ]
+      },
+      {
+        "name": "Caramel au lait",
+        "price": 4.1,
+        "english": [
+          "caramel",
+          "milk"
+        ],
+        "rect": [
+          0.5284,
+          0.6192,
+          0.4278,
+          0.02
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-03.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_et_menus_2014_du_restaurant_Le_Royal_(2).jpg",
+    "license": "Public domain",
+    "dishes": [
+      {
+        "name": "Riz cantonais",
+        "price": 3.5,
+        "english": [
+          "rice",
+          "cantonese"
+        ],
+        "rect": [
+          0.0622,
+          0.7548,
+          0.3089,
+          0.0448
+        ]
+      },
+      {
+        "name": "Soupe au crabe et asperge",
+        "price": 4.4,
+        "english": [
+          "crab",
+          "asparagus"
+        ],
+        "rect": [
+          0.063,
+          0.611,
+          0.3076,
+          0.03
+        ]
+      },
+      {
+        "name": "Nouilles sautées aux légumes",
+        "price": 5.2,
+        "english": [
+          "noodle"
+        ],
+        "rect": [
+          0.3715,
+          0.8444,
+          0.3016,
+          0.03
+        ]
+      },
+      {
+        "name": "Canard aux cinq épices",
+        "price": 8,
+        "english": [
+          "duck",
+          "spice"
+        ],
+        "rect": [
+          0.3775,
+          0.1735,
+          0.2912,
+          0.0342
+        ]
+      },
+      {
+        "name": "Bœuf à la thaïlandaise",
+        "price": 7.6,
+        "english": [
+          "beef",
+          "thai"
+        ],
+        "rect": [
+          0.3765,
+          0.4304,
+          0.2993,
+          0.035
+        ]
+      },
+      {
+        "name": "Rouleau de printemps",
+        "price": 1.9,
+        "english": [
+          "spring roll",
+          "roll"
+        ],
+        "rect": [
+          0.0636,
+          0.26,
+          0.3092,
+          0.0361
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-04.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_2013_du_restaurant_Le_Lopain%27_Kess.JPG",
+    "license": "CC BY-SA 3.0",
+    "dishes": [
+      {
+        "name": "L'entrecôte aux échalotes",
+        "price": 18,
+        "english": [
+          "entrecote",
+          "steak",
+          "shallot",
+          "rib"
+        ],
+        "rect": [
+          0.4086,
+          0.3769,
+          0.2993,
+          0.0233
+        ]
+      },
+      {
+        "name": "La pièce de bœuf",
+        "price": 18,
+        "english": [
+          "beef"
+        ],
+        "rect": [
+          0.4051,
+          0.3944,
+          0.3042,
+          0.03
+        ]
+      },
+      {
+        "name": "Les nems de canard au piment d'espelette",
+        "price": 8,
+        "english": [
+          "duck"
+        ],
+        "rect": [
+          0.0321,
+          0.2929,
+          0.3578,
+          0.0267
+        ]
+      },
+      {
+        "name": "Les profiteroles",
+        "price": 8,
+        "english": [
+          "profiterole"
+        ],
+        "rect": [
+          0.7178,
+          0.4367,
+          0.2457,
+          0.0267
+        ]
+      },
+      {
+        "name": "L'assiette de fromages",
+        "price": 8,
+        "english": [
+          "cheese"
+        ],
+        "rect": [
+          0.7149,
+          0.2923,
+          0.247,
+          0.03
+        ]
+      },
+      {
+        "name": "La tapas 3 foie gras",
+        "price": 14,
+        "english": [
+          "foie gras",
+          "tapas"
+        ],
+        "rect": [
+          0.5376,
+          0.7283,
+          0.4303,
+          0.0287
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-05.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_2015_du_restaurant_Le_Vivier.JPG",
+    "license": "CC BY-SA 3.0",
+    "dishes": [
+      {
+        "name": "Crevettes roses",
+        "price": 9,
+        "english": [
+          "shrimp",
+          "prawn"
+        ],
+        "rect": [
+          0.0823,
+          0.1938,
+          0.4425,
+          0.0421
+        ]
+      },
+      {
+        "name": "Crème brûlée",
+        "price": 5.5,
+        "english": [
+          "crème brûlée",
+          "creme brulee",
+          "brûlée",
+          "brulee",
+          "custard"
+        ],
+        "rect": [
+          0.0587,
+          0.81,
+          0.4346,
+          0.0547
+        ]
+      },
+      {
+        "name": "Bavette d'aloyau, frites, salade",
+        "price": 14.9,
+        "english": [
+          "steak",
+          "flank",
+          "skirt",
+          "sirloin"
+        ],
+        "rect": [
+          0.0929,
+          0.6635,
+          0.5551,
+          0.0521
+        ],
+        "translationIssue": "Translated as \"bavette of chew\""
+      },
+      {
+        "name": "Langoustines (8 pièces)",
+        "price": 13.9,
+        "english": [
+          "langoustine",
+          "scampi",
+          "prawn",
+          "crayfish"
+        ],
+        "rect": [
+          0.0615,
+          0.2762,
+          0.4667,
+          0.0472
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-06.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_2015_de_la_sandwicherie_La_Grignotte.JPG",
+    "license": "CC BY-SA 3.0",
+    "dishes": [
+      {
+        "name": "Bière Heineken 33 cl",
+        "price": 1.8,
+        "english": [
+          "beer"
+        ],
+        "rect": [
+          0.0464,
+          0.6352,
+          0.2823,
+          0.0501
+        ]
+      },
+      {
+        "name": "Eau",
+        "price": 1,
+        "english": [
+          "water"
+        ],
+        "rect": [
+          0.0465,
+          0.5696,
+          0.2821,
+          0.0499
+        ]
+      },
+      {
+        "name": "Crêpes à partir de",
+        "price": 1.9,
+        "english": [
+          "crepe",
+          "pancake"
+        ],
+        "rect": [
+          0.692,
+          0.4844,
+          0.1989,
+          0.0601
+        ]
+      },
+      {
+        "name": "Gaufres à partir de",
+        "price": 2.1,
+        "english": [
+          "waffle"
+        ],
+        "rect": [
+          0.692,
+          0.5245,
+          0.1989,
+          0.0598
+        ]
+      },
+      {
+        "name": "Viennoiseries à partir de",
+        "price": 0.9,
+        "english": [
+          "pastr",
+          "viennoiserie"
+        ],
+        "rect": [
+          0.0461,
+          0.2943,
+          0.2828,
+          0.0504
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-07.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_de_la_Taverne_Bavaroise_(1).jpg",
+    "license": "Public domain",
+    "dishes": [
+      {
+        "name": "Salade de tomates",
+        "price": 19,
+        "english": [
+          "tomato",
+          "salad"
+        ],
+        "rect": [
+          0.5308,
+          0.5337,
+          0.4196,
+          0.0408
+        ]
+      },
+      {
+        "name": "Harengs Baltique à la crème",
+        "price": 24,
+        "english": [
+          "herring"
+        ],
+        "rect": [
+          0.5271,
+          0.5748,
+          0.4213,
+          0.0421
+        ]
+      },
+      {
+        "name": "Jambon de la Forêt Noire",
+        "price": 34,
+        "english": [
+          "ham",
+          "black forest"
+        ],
+        "rect": [
+          0.528,
+          0.6587,
+          0.4167,
+          0.0387
+        ]
+      },
+      {
+        "name": "Saumon fumé",
+        "price": 65,
+        "english": [
+          "salmon"
+        ],
+        "rect": [
+          0.5251,
+          0.7004,
+          0.4196,
+          0.0387
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-08.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_des_desserts_2012_des_caf%C3%A9t%C3%A9rias_Toquenelle_(1).jpg",
+    "license": "Public domain",
+    "dishes": [
+      {
+        "name": "Dame Blanche",
+        "price": 3.5,
+        "english": [
+          "white lady",
+          "dame blanche",
+          "sundae",
+          "ice cream"
+        ],
+        "rect": [
+          0.1225,
+          0.228,
+          0.5365,
+          0.0609
+        ]
+      },
+      {
+        "name": "Banana Split",
+        "price": 4.3,
+        "english": [
+          "banana"
+        ],
+        "rect": [
+          0.1262,
+          0.2942,
+          0.5786,
+          0.0533
+        ]
+      },
+      {
+        "name": "Pêche Melba",
+        "price": 4.5,
+        "english": [
+          "peach"
+        ],
+        "rect": [
+          0.3687,
+          0.71,
+          0.2338,
+          0.1342
+        ],
+        "translationIssue": "Translated as \"melba fishing\" (pêche: peach or fishing)"
+      },
+      {
+        "name": "Tutti Frutti",
+        "price": 3.5,
+        "english": [
+          "tutti",
+          "fruit"
+        ],
+        "rect": [
+          0.1239,
+          0.4625,
+          0.3844,
+          0.0601
+        ]
+      },
+      {
+        "name": "Café ou chocolat liégeois",
+        "price": 3.5,
+        "english": [
+          "coffee",
+          "chocolate"
+        ],
+        "rect": [
+          0.1283,
+          0.1442,
+          0.5497,
+          0.0533
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fr-09.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Carte_2015_du_restaurant_Le_M%C3%B4le.JPG",
+    "license": "CC BY-SA 3.0",
+    "dishes": [
+      {
+        "name": "Fromage blanc et granola",
+        "price": 6,
+        "english": [
+          "cottage",
+          "cheese",
+          "granola",
+          "fromage",
+          "yogurt"
+        ],
+        "rect": [
+          0.1376,
+          0.7287,
+          0.8135,
+          0.08
+        ]
+      },
+      {
+        "name": "Ardoise charcuterie",
+        "price": 16,
+        "english": [
+          "charcuterie",
+          "cold cut",
+          "deli",
+          "board"
+        ],
+        "rect": [
+          0.0837,
+          0.2242,
+          0.8681,
+          0.085
+        ],
+        "translationIssue": "Translated as \"charcute slate\""
+      }
+    ]
+  },
+  {
+    "file": "fr-10.jpg",
+    "language": "fr",
+    "currency": "EUR",
+    "source": "https://commons.wikimedia.org/wiki/File:Menu_du_jour_d%27un_restaurant_asiatique_lyonnais_en_2017.jpg",
+    "license": "CC0",
+    "dishes": [
+      {
+        "name": "Nems porc ou poulet x4",
+        "price": 5,
+        "english": [
+          "pork",
+          "chicken",
+          "spring roll",
+          "nem"
+        ],
+        "rect": [
+          0.0081,
+          0.2068,
+          0.9828,
+          0.0663
+        ]
+      },
+      {
+        "name": "Beignets aux crevettes x3",
+        "price": 5,
+        "english": [
+          "shrimp",
+          "prawn",
+          "fritter",
+          "donut",
+          "doughnut"
+        ],
+        "rect": [
+          0.043,
+          0.2444,
+          0.9394,
+          0.075
+        ]
+      },
+      {
+        "name": "Bò bún (crudités, vermicelles, nems, bœuf aux oignons)",
+        "price": 9.8,
+        "english": [
+          "beef",
+          "vermicelli",
+          "noodle"
+        ],
+        "rect": [
+          0,
+          0.4638,
+          1,
+          0.127
+        ]
+      },
+      {
+        "name": "Bò kho (bœuf mijoté aux carottes et aux 5 épices)",
+        "price": 11,
+        "english": [
+          "beef",
+          "stew",
+          "carrot"
+        ],
+        "rect": [
+          0,
+          0.793,
+          1,
+          0.1664
+        ]
+      },
+      {
+        "name": "Maxi bò bún",
+        "price": 14.9,
+        "english": [
+          "beef",
+          "vermicelli",
+          "noodle",
+          "bun",
+          "bo bun"
+        ],
+        "rect": [
+          0,
+          0.5401,
+          1,
+          0.1464
+        ]
+      },
+      {
+        "name": "Salade de riz paï (porc et poulet)",
+        "price": 5.5,
+        "english": [
+          "salad",
+          "rice"
+        ],
+        "rect": [
+          0,
+          0.2881,
+          0.9851,
+          0.1154
+        ]
+      }
+    ]
+  }
+]
