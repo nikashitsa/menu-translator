@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83F4EA2A308B7A3A0024A83A /* privacy-policy.md in Resources */ = {isa = PBXBuildFile; fileRef = 83F4EA28308B7A3A0024A83A /* privacy-policy.md */; };
+		83F4EA2B308B7A3A0024A83A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83F4EA27308B7A3A0024A83A /* LICENSE.txt */; };
+		83F4EA2C308B7A3A0024A83A /* terms-and-conditions.md in Resources */ = {isa = PBXBuildFile; fileRef = 83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8386AFA93077C1F20089F547 /* Menu Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F4EA27308B7A3A0024A83A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		83F4EA28308B7A3A0024A83A /* privacy-policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "privacy-policy.md"; sourceTree = "<group>"; };
+		83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "terms-and-conditions.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +41,9 @@
 		8386AFA03077C1F20089F547 = {
 			isa = PBXGroup;
 			children = (
+				83F4EA27308B7A3A0024A83A /* LICENSE.txt */,
+				83F4EA28308B7A3A0024A83A /* privacy-policy.md */,
+				83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */,
 				8386AFAB3077C1F20089F547 /* Menu Translator */,
 				8386AFAA3077C1F20089F547 /* Products */,
 			);
@@ -109,6 +121,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F4EA2A308B7A3A0024A83A /* privacy-policy.md in Resources */,
+				83F4EA2B308B7A3A0024A83A /* LICENSE.txt in Resources */,
+				83F4EA2C308B7A3A0024A83A /* terms-and-conditions.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
