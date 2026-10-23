@@ -36,6 +36,7 @@
 		83F4EA27308B7A3A0024A83A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		83F4EA28308B7A3A0024A83A /* privacy-policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "privacy-policy.md"; sourceTree = "<group>"; };
 		83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "terms-and-conditions.md"; sourceTree = "<group>"; };
+		83C7E501309A00000000F7A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -89,6 +90,7 @@
 		8386AFA03077C1F20089F547 = {
 			isa = PBXGroup;
 			children = (
+				83C7E501309A00000000F7A8 /* README.md */,
 				83F4EA27308B7A3A0024A83A /* LICENSE.txt */,
 				83F4EA28308B7A3A0024A83A /* privacy-policy.md */,
 				83F4EA29308B7A3A0024A83A /* terms-and-conditions.md */,
