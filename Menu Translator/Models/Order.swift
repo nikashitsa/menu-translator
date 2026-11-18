@@ -28,6 +28,19 @@ final class Order {
     var total: Decimal {
         dishes.reduce(0) { $0 + $1.subtotal }
     }
+
+    /// The total in the menu's currency (e.g. 1000 MXN), when every dish ordered has a menu
+    /// price in the same currency; nil otherwise.
+    var menuTotal: (amount: Decimal, currencyCode: String)? {
+        let ordered = dishes.filter { $0.quantity > 0 }
+        guard let code = ordered.first?.menuCurrencyCode else { return nil }
+        var amount: Decimal = 0
+        for dish in ordered {
+            guard dish.menuCurrencyCode == code, let price = dish.menuPrice else { return nil }
+            amount += price * Decimal(dish.quantity)
+        }
+        return (amount, code)
+    }
 }
 
 extension ModelContext {

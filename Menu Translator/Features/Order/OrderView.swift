@@ -14,8 +14,10 @@ struct OrderView: View {
         List {
             header
                 .plainListRow(top: 24, bottom: 40)
-            restaurant
-                .plainListRow(bottom: 40)
+            Text("Dishes")
+                .setFontStyle(Fonts.textLgBold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .plainListRow(bottom: 8)
             ForEach(order.sortedDishes) { dish in
                 DishRow(dish: dish, onOpen: { router.push(.dishDetails(dish)) })
                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
@@ -43,8 +45,11 @@ struct OrderView: View {
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
-                .plainListRow()
+                .plainListRow(bottom: 8)
             }
+            // 40pt below the dishes: the last row (dish or "Add more") adds the other 8.
+            restaurant
+                .plainListRow(top: 32, bottom: 24)
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
@@ -135,7 +140,15 @@ struct OrderView: View {
 
     private var header: some View {
         BackHeader(onBack: goBack) {
-            Text("Order \(order.total.formatted(.usd))")
+            VStack(alignment: .leading, spacing: 0) {
+                Text("Order \(order.total.formatted(.usd))")
+                    .setFontStyle(Fonts.textLgBold)
+                // The menu currency's total, only when the dishes share a single one.
+                if let menuTotal = order.menuTotal {
+                    Text("(\(CurrencyInfo.menuPriceText(menuTotal.amount, currencyCode: menuTotal.currencyCode)))")
+                        .setFontStyle(Fonts.textMd)
+                }
+            }
         }
     }
 }

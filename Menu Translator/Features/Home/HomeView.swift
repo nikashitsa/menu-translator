@@ -1,3 +1,4 @@
+import StoreKit
 import SwiftData
 import SwiftUI
 
@@ -7,6 +8,7 @@ struct HomeView: View {
 
     @Environment(\.modelContext) private var modelContext
     @Environment(OrderSession.self) private var orderSession
+    @Environment(\.requestReview) private var requestReview
     @Query(sort: \Order.date, order: .reverse) private var orders: [Order]
 
     @State private var isConfirmingClearAll = false
@@ -82,6 +84,22 @@ struct HomeView: View {
             }
         } message: {
             Text("This can't be undone.")
+        }
+        // On launch and whenever the user comes back to Home.
+        .onChange(of: router.path.isEmpty, initial: true) { _, isOnHome in
+            if isOnHome { askForReview() }
+        }
+    }
+
+    /// Asks for an App Store review once the user has a saved order. The system decides whether
+    /// the prompt actually shows (at most 3 times a year), so it's fine to ask on every visit.
+    private func askForReview() {
+        guard hasCompletedOnboarding, !ScreenshotMode.isEnabled, !recentOrders.isEmpty else { return }
+        Task {
+            // Let the pop animation finish, and skip it if the user has already left Home.
+            try? await Task.sleep(for: .seconds(1))
+            guard router.path.isEmpty, hasCompletedOnboarding else { return }
+            requestReview()
         }
     }
 
