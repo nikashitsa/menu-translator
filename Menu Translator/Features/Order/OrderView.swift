@@ -8,6 +8,8 @@ struct OrderView: View {
 
     @State private var isEditingRestaurant = false
     @State private var restaurantText = ""
+    /// See `isOpenedFromHome`.
+    @State private var openedFromHome: Bool?
 
     var body: some View {
         // A List (styled like the rest of the app) so dishes get the standard swipe-to-delete.
@@ -70,6 +72,11 @@ struct OrderView: View {
         }
         .background(Colors.white)
         .toolbar(.hidden, for: .navigationBar)
+        .onAppear {
+            if openedFromHome == nil {
+                openedFromHome = router.path.first == .order(order)
+            }
+        }
         // Like on Translation: keep the layout still while the alert's keyboard is up.
         .ignoresSafeArea(.keyboard)
         // Like the order's other changes, kept only when the order is saved.
@@ -124,9 +131,12 @@ struct OrderView: View {
         order.dishes.allSatisfy { $0.quantity == 0 }
     }
 
-    /// This screen sits directly on Home (rather than on Scan/Translation).
+    /// This screen sits directly on Home (rather than on Scan/Translation). Settled when the screen
+    /// first appears and kept, because the path changes before the push/pop animations end:
+    /// reading it live made "Add more" vanish (and Restaurant jump up) while Dish details slid
+    /// in or while going back to Home.
     private var isOpenedFromHome: Bool {
-        router.path.count == 1
+        openedFromHome ?? (router.path.first == .order(order))
     }
 
     /// Going back to Home without Save discards the changes made to the order (dishes added,
@@ -158,45 +168,74 @@ private struct DishRow: View {
     let onOpen: () -> Void
 
     var body: some View {
-        HStack(spacing: 8) {
-            Button(action: onOpen) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(dish.translatedName)
-                        .setFontStyle(Fonts.textLgBold)
-                    Text("\(price(dish.price)) x \(dish.quantity) = \(price(dish.subtotal))")
-                        .setFontStyleMultiline(Fonts.textMd)
-                }
+        VStack(alignment: .leading, spacing: 8) {
+            Text(dish.translatedName)
+                .setFontStyleMultiline(Fonts.textMdBold)
+                .lineLimit(2)
+                .truncationMode(.tail)
+                .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .contentShape(.rect)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("dishRow")
+                // The card opens on tap; VoiceOver and UI tests reach it through the name.
+                .accessibilityAddTraits(.isButton)
+                .accessibilityAction(.default, onOpen)
+                .accessibilityIdentifier("dishRow")
 
-            HStack(spacing: 12) {
-                Button {
-                    // Stops at 0; dishes at 0 stay listed and are removed when the order is saved.
-                    dish.quantity -= 1
-                } label: {
-                    Image(systemName: "minus")
+            HStack(spacing: 4) {
+                Text(totalText)
+                    .setFontStyleMultiline(Fonts.textMd)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                HStack(spacing: 12) {
+                    Button {
+                        // Stops at 0; dishes at 0 stay listed and are removed when the order is saved.
+                        if dish.quantity > 0 {
+                            dish.quantity -= 1
+                        }
+                    } label: {
+                        Image(systemName: "minus")
+                    }
+                    .buttonStyle(OutlineIconButton())
+                    // Looks disabled at 0 but stays enabled, so a tap on it does nothing instead of
+                    // falling through to the card and opening the dish (a disabled button passes taps on).
+                    .opacity(dish.quantity == 0 ? 0.4 : 1)
+                    .accessibilityRepresentation {
+                        // VoiceOver still announces it as dimmed at 0.
+                        Button("Decrease") { dish.quantity -= 1 }
+                            .disabled(dish.quantity == 0)
+                    }
+                    Text("\(dish.quantity)")
+                        .setFontStyle(Fonts.textMd)
+                        .monospacedDigit()
+                        .contentTransition(.numericText())
+                    Button {
+                        dish.quantity += 1
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    .buttonStyle(OutlineIconButton())
                 }
-                .buttonStyle(OutlineIconButton())
-                .disabled(dish.quantity == 0)
-                .opacity(dish.quantity == 0 ? 0.4 : 1)
-                Button {
-                    dish.quantity += 1
-                } label: {
-                    Image(systemName: "plus")
-                }
-                .buttonStyle(OutlineIconButton())
+                // The quantity only changes here (− and +) while this screen is shown.
+                .sensoryFeedback(.impact(weight: .light), trigger: dish.quantity)
             }
-            // The quantity only changes here (− and +) while this screen is shown.
-            .sensoryFeedback(.impact(weight: .light), trigger: dish.quantity)
         }
         .card()
+        // A tap anywhere on the card opens the dish; − and + are buttons, so they take their
+        // own taps first.
+        .contentShape(.rect(cornerRadius: 16))
+        .onTapGesture(perform: onOpen)
     }
 
-    private func price(_ value: Decimal) -> String {
-        value.formatted(.usd)
+    /// The dish's total (price × quantity), in USD and in the menu currency: "$100 (10 MXN)".
+    /// At 0 just "$0.00", like the header's total.
+    private var totalText: String {
+        guard dish.quantity > 0 else {
+            return dish.subtotal.formatted(.usd)
+        }
+        return CurrencyInfo.priceDescription(
+            usd: dish.subtotal,
+            menuPrice: dish.menuPrice.map { $0 * Decimal(dish.quantity) },
+            currencyCode: dish.menuCurrencyCode
+        )
     }
 }
 
